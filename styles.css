@@ -1,3 +1,8 @@
+/* ============================================================
+   RISHIT MITTAL — PORTFOLIO CSS
+   Bright Professional Theme
+   ============================================================ */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
 
 :root {
@@ -566,4 +571,39 @@ footer {
   .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
   .footer-links { gap: 1.2rem; }
   .contact-cards { flex-direction: column; align-items: center; }
+}
+
+/* ============================================================
+   PHOTO STYLES
+   ============================================================ */
+.avatar-photo-wrap {
+  position: relative;
+  width: 110px; height: 110px;
+  margin: 0 auto 1rem;
+}
+.avatar-photo {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  object-fit: cover; object-position: center top;
+  border: 3px solid var(--white);
+  box-shadow: 0 8px 24px rgba(37,99,235,0.25);
+  display: block;
+}
+.avatar-photo-ring {
+  position: absolute; inset: -5px;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  opacity: 0.4;
+  animation: spin-slow 8s linear infinite;
+}
+@keyframes spin-slow { to { transform: rotate(360deg); } }
+
+.acb-avatar {
+  width: 56px; height: 56px; border-radius: 16px;
+  overflow: hidden; flex-shrink: 0;
+}
+.acb-photo {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
 }
